@@ -60,6 +60,7 @@ export class PreClassificationController {
     let result = await this.preClassificationService.createAll(file);
     var o = await this.preClassificationService.findAll({"page":0,"limit":1000,"orderBy":"ascending", "orderByColumn":"code"}); 
     await this.classificationService.createAll(o[0][0],dt.dt);
+    await this.preClassificationService.dropCollection();
     return res.send(result);  
     }
 }

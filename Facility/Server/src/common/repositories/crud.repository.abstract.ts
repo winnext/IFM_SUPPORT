@@ -47,4 +47,8 @@ export abstract class BaseAbstractRepository<T> implements BaseInterfaceReposito
   public async findByCriteria(key: string, val: string) {
     return await this.entity.find();
   }
+
+  public async dropCollection() {
+    return null;
+  }
 }

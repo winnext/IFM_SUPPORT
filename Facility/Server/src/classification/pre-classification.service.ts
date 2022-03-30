@@ -170,4 +170,7 @@ export class PreClassificationService {
       return 'failed';
     }
   }
+  async dropCollection() {
+    return await this.preClassificationRepository.dropCollection();
+  }
 }

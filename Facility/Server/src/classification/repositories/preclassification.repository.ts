@@ -89,5 +89,7 @@ export class PreClassificationRepository implements BaseInterfaceRepository<PreC
     let list = await this.preClassificationModel.find({"parent_code": val}).sort([["code", "ascending"]]);
     return list;
   }
-
+  async dropCollection() {
+    return this.preClassificationModel.collection.drop();
+  }
 }

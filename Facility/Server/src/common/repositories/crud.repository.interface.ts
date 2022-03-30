@@ -15,4 +15,6 @@ export interface BaseInterfaceRepository<T> {
 
   findByCriteria(key: string, val: string);
 
+  dropCollection();
+
 }

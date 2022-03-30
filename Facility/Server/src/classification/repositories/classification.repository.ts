@@ -85,4 +85,8 @@ export class ClassificationRepository implements BaseInterfaceRepository<Classif
     let list = await this.classificationModel.find().where([[key, val]]);
     return list;
   }
+
+  async dropCollection() {
+    return null;
+  }
 }
