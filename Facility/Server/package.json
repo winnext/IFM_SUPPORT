@@ -44,7 +44,7 @@
     "nest-keycloak-connect": "^1.8.1",
     "nestjs-i18n": "^8.2.2",
     "pg": "^8.7.3",
-    "read-excel-file": "^5.2.28",
+    "read-excel-file": "^5.5.0",
     "redis": "^3.1.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
